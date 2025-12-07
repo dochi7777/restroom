@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  width: 100%;
+  padding: 28px 0;
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+.container {
+  width: 100vw;
+  height: calc(100vh - 86px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  outline: 3px solid black;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  background: black;
+  z-index: 1000;
+}
+
+.container::before {
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.container::after {
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  transform: translateY(-50%);
+}
+
+.cell {
+  position: relative;
+  cursor: pointer;
+}
+
+.cell input {
+  display: none;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail {
+  position: absolute;
+  inset: 0;
+  display: none;
+  background: white;
+}
+
+.cell input:checked ~ .front {
+  display: none;
+}
+
+.cell input:checked ~ .detail {
+  display: grid;
+}
+
+.detail-general {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.detail-toilet,
+.detail-urinal,
+.detail-sink {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.subcell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subcell input {
+  display: none;
+}
+
+.subfront {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+  background:white;
+  outline: 3px solid black;
+  outline-offset: -1.5px;
+}
+
+.subcell input:checked ~ .subfront {
+  display: none;
+}
+
+.subcell input:checked ~ .deep-detail {
+  display: grid;
+}
+
+.deep-detail {
+  position: absolute;
+  inset: 0;
+  display: none;
+  background: white;
+}
+
+.two-split { grid-template-columns: repeat(2, 1fr); }
+.three-split { grid-template-columns: repeat(3, 1fr); }
+.four-split { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 1fr; }
+.five-split { grid-template-columns: repeat(5, 1fr); }
+.two-row { grid-template-rows: repeat(2, 1fr); }
+.one-split { grid-template-columns: 1fr; }
+
+.detail > .subcell,
+.deep-detail > div {
+  outline: 3px solid black;
+  outline-offset: -1.5px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.deep-detail > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.deep-detail > div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
