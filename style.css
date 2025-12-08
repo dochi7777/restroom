@@ -172,3 +172,24 @@ body {
   text-align: center;
   font-size: 18px;
 }
+
+.front-img {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  text-align: center;
+}
+
+.front-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.front-img p {
+  margin-top: 5px;
+  color: black;
+  font-size: 16px;
+}
