@@ -1,212 +1,214 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>장애인화장실 설계 기준</title>
-<meta name="description" content="장애인화장실 설계 기준을 시각적 자료와 함께 설명하는 페이지입니다.">
-<meta name="keywords" content="장애인화장실, 설계, 기준">    
-<link rel="stylesheet" href="style.css">
-    
-<!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="장애인화장실 설계 기준" />
-<meta itemprop="description" content="장애인화장실 설계 기준을 시각적 자료와 함께 설명하는 페이지입니다." />
-<meta itemprop="image" content="thumbnail.jpg" />
-
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://dochi7777.github.io/restroom/" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="장애인화장실 설계 기준" />
-<meta property="og:description" content="장애인화장실 설계 기준을 시각적 자료와 함께 설명하는 페이지입니다." />
-<meta property="og:image" content="thumbnail.jpg" />
-
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="장애인화장실 설계 기준" />
-<meta name="twitter:description" content="장애인화장실 설계 기준을 시각적 자료와 함께 설명하는 페이지입니다." />
-<meta name="twitter:image" content="thumbnail.jpg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장애인화장실 설계 기준</title>
+  <meta name="description" content="장애인화장실 설계 기준을 시각적 자료와 함께 설명하는 웹사이트입니다.">
+  <meta name="keywords" content="장애인화장실, 설계, 기준">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="title">
-    장애인화장실 설계 기준
-</header>
+  <header class="title">
+    <h1>장애인화장실 설계 기준</h1>
+  </header>
 
-<form autocomplete="off">
+  <main class="container">
 
-<div class="container">
+    <section class="cell">
+      <input type="checkbox" id="general">
+      <label class="front" for="general">
+        <figure>
+          <img src="image/first.jpg" alt="장애인화장실 문 앞 이미지">
+          <p>일반사항</p>
+        </figure>
+      </label>
 
-    <label class="cell cell-general">
-        <input type="checkbox">
-        <div class="front">일반 사항</div>
-        <div class="detail detail-general">
+      <article class="detail detail-general">
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">설치장소</div>
-                <div class="deep-detail one-split">
-                    <div>
-                        <img src="image/path.jpg" alt="통로">
-                        <p>통로</p>                                         
-                    </div>
-                </div>
-            </label>
+        <section class="subcell">
+          <input type="checkbox" id="path">
+          <label class="subfront" for="path">설치장소</label>
+          <article class="deep-detail one-split">
+            <figure>
+              <img src="image/path.jpg" alt="장애인화장실 통로 이미지">
+              <a href="path.html"><p>통로</p></a>
+            </figure>
+          </article>
+        </section>
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">재질과 마감</div>
-                <div class="deep-detail two-row-split">
-                    <div>
-                        <img src="image/tile.jpg" alt="타일">
-                        <p>타일</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/dot.jpg" alt="점형 블록">
-                        <p>점형 블록</p>                                         
-                    </div>                    
-                </div>
-            </label>
+        <section class="subcell">
+          <input type="checkbox" id="material">
+          <label class="subfront" for="material">재질과 마감</label>
+          <article class="deep-detail two-row">
+            <figure>
+              <img src="image/tile.jpg" alt="타일 이미지">
+              <a href="tile.html"><p>타일</p></a>
+            </figure>
+            <figure>
+              <img src="image/dot.jpg" alt="장애인화장실 문 앞 점형 블록 이미지">
+              <a href="dot.html"><p>점형 블록</p></a>
+            </figure>
+          </article>
+        </section>
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">기타설비</div>
-                <div class="deep-detail four-split">
-                    <div>
-                        <img src="image/icon.jpg" alt="표시판">
-                        <p>표시판</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/lever.jpg" alt="레버">
-                        <p>레버 및 수도꼭지</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/sound.jpg" alt="음성유도장치">
-                        <p>음성유도장치</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/icon2.jpg" alt="예외">
-                        <p>예외</p>                                         
-                    </div>                                                         
-                </div>
-            </label>
+        <section class="subcell">
+          <input type="checkbox" id="etc">
+          <label class="subfront" for="etc">기타설비</label>
+          <article class="deep-detail four-split">
+            <figure>
+              <img src="image/icon.jpg" alt="장애인화장실 표시판 이미지">
+              <a href="icon.html"><p>표시판</p></a>
+            </figure>
+            <figure>
+              <img src="image/lever.jpg" alt="변기 레버 이미지">
+              <a href="lever.html"><p>레버 및 수도꼭지</p></a>
+            </figure>
+            <figure>
+              <img src="image/sound.jpg" alt="화장실 타일 이미지">
+              <a href="sound.html"><p>음성유도장치</p></a>
+            </figure>
+            <figure>
+              <img src="image/icon2.jpg" alt="장애인 아이콘 이미지">
+              <a href="other.html"><p>예외</p></a>
+            </figure>
+          </article>
+        </section>
 
-        </div>
-    </label>
+      </article>
+    </section>
 
-    <label class="cell">
-        <input type="checkbox">
-        <div class="front">대변기</div>
-        <div class="detail detail-toilet">
+    <section class="cell">
+      <input type="checkbox" id="toilet">
+      <label class="front" for="toilet">
+        <figure>
+          <img src="image/second.jpg" alt="대변기 이미지">
+          <p>대변기</p>
+        </figure>
+      </label>
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">활동공간</div>
-                <div class="deep-detail two-split">
-                    <div>
-                        <img src="image/toilet.jpg" alt="면적">
-                        <p>면적</p>
-                    </div>
-                    <div>
-                        <img src="image/door.jpg" alt="문">
-                        <p>문</p>
-                    </div>
-                </div>
-            </label>
+      <article class="detail detail-toilet">
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">구조</div>
-                <div class="deep-detail one-split">
-                    <div>
-                        <img src="image/toilet2.jpg" alt="양변기">
-                        <p>양변기</p>                                         
-                    </div>
-                </div>
-            </label>
+        <section class="subcell">
+          <input type="checkbox" id="space">
+          <label class="subfront" for="space">활동공간</label>
+          <article class="deep-detail two-split">
+            <figure>
+              <img src="image/toilet.jpg" alt="장애인화장실의 면적이 보이는 이미지">
+              <a href="place.html"><p>면적</p></a>
+            </figure>
+            <figure>
+              <img src="image/door.jpg" alt="장애인화장실 문 이미지">
+              <a href="door.html"><p>문</p></a>
+            </figure>
+          </article>
+        </section>
 
-        </div>
-    </label>
+        <section class="subcell">
+          <input type="checkbox" id="structure">
+          <label class="subfront" for="structure">구조</label>
+          <article class="deep-detail one-split">
+            <figure>
+              <img src="image/toilet2.jpg" alt="양변기 이미지">
+              <a href="toilet.html"><p>양변기</p></a>
+            </figure>
+          </article>
+        </section>
 
-    <label class="cell">
-        <input type="checkbox">
-        <div class="front">소변기</div>
-        <div class="detail detail-urinal">
+      </article>
+    </section>
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">구조</div>
-                <div class="deep-detail one-split">
-                    <div>
-                        <img src="image/man.jpg" alt="소변기">
-                        <p>소변기</p>                                         
-                    </div>
-                </div>                
-            </label>
+    <section class="cell">
+      <input type="checkbox" id="urinal">
+      <label class="front" for="urinal">
+        <figure>
+          <img src="image/third.jpg" alt="남자장애인화장실 표시판 이미지">
+          <p>소변기</p>
+        </figure>
+      </label>
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">손잡이</div>
-                <div class="deep-detail two-split">
-                    <div>
-                        <img src="image/man2.jpg" alt="수평손잡이">
-                        <p>수평손잡이</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/man3.jpg" alt="수직손잡이">
-                        <p>수직손잡이</p>                                         
-                    </div>                   
-                </div>                              
-            </label>
+      <article class="detail detail-urinal">
 
-        </div>
-    </label>
+        <section class="subcell">
+          <input type="checkbox" id="urinal-structure">
+          <label class="subfront" for="urinal-structure">구조</label>
+          <article class="deep-detail one-split">
+            <figure>
+              <img src="image/man.jpg" alt="남자장애인화장실 표시판 이미지">
+              <a href="man.html"><p>소변기</p></a>
+            </figure>
+          </article>
+        </section>
 
-    <label class="cell">
-        <input type="checkbox">
-        <div class="front">세면대</div>
-        <div class="detail detail-sink">
+        <section class="subcell">
+          <input type="checkbox" id="handle">
+          <label class="subfront" for="handle">손잡이</label>
+          <article class="deep-detail two-split">
+            <figure>
+              <img src="image/man2.jpg" alt="화장실 타일 이미지">
+              <a href="man2.html"><p>수평손잡이</p></a>
+            </figure>
+            <figure>
+              <img src="image/man3.jpg" alt="화장실 타일 이미지">
+              <a href="man3.html"><p>수직손잡이</p></a>
+            </figure>
+          </article>
+        </section>
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">구조</div>
-                <div class="deep-detail two-row">
-                    <div>
-                        <img src="image/sink4.jpg" alt="높이">
-                        <p>높이</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/sink3.jpg" alt="하부">
-                        <p>하부</p>                                         
-                    </div>
-                </div>
-            </label>
+      </article>
+    </section>
 
-            <label class="subcell">
-                <input type="checkbox">
-                <div class="subfront">손잡이 및 기타 설비</div>
-                <div class="deep-detail three-split">
-                    <div>
-                        <img src="image/sink.jpg" alt="손잡이">
-                        <p>손잡이</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/sink2.jpg" alt="수도꼭지">
-                        <p>수도꼭지</p>                                         
-                    </div>
-                    <div>
-                        <img src="image/mirror.jpg" alt="거울">
-                        <p>거울</p>                                         
-                    </div>     
-                </div>
-            </label>
+    <section class="cell">
+      <input type="checkbox" id="sink">
+      <label class="front" for="sink">
+        <figure>
+          <img src="image/fourth.jpg" alt="화장실 세면대 이미지">
+          <p>세면대</p>
+        </figure>
+      </label>
 
-        </div>
-    </label>
+      <article class="detail detail-sink">
 
-</div>
+        <section class="subcell">
+          <input type="checkbox" id="sink-structure">
+          <label class="subfront" for="sink-structure">구조</label>
+          <article class="deep-detail two-row">
+            <figure>
+              <img src="image/sink4.jpg" alt="세면대를 정면에서 찍은 이미지">
+              <a href="top.html"><p>높이</p></a>
+            </figure>
+            <figure>
+              <img src="image/sink3.jpg" alt="세면대 하부 이미지">
+              <a href="bottom.html"><p>하부</p></a>
+            </figure>
+          </article>
+        </section>
 
-</form>
+        <section class="subcell">
+          <input type="checkbox" id="sink-extra">
+          <label class="subfront" for="sink-extra">손잡이 및 기타 설비</label>
+          <article class="deep-detail three-split">
+            <figure>
+              <img src="image/sink.jpg" alt="세면대 보조손잡이 이미지">
+              <a href="grip.html"><p>손잡이</p></a>
+            </figure>
+            <figure>
+              <img src="image/sink2.jpg" alt="수도꼭지 이미지">
+              <a href="tap.html"><p>수도꼭지</p></a>
+            </figure>
+            <figure>
+              <img src="image/mirror.jpg" alt="화장실 세면대 거울 이미지">
+              <a href="mirror.html"><p>거울</p></a>
+            </figure>
+          </article>
+        </section>
+
+      </article>
+    </section>
+
+  </main>
 
 </body>
 </html>
-
